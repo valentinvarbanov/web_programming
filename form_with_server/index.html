@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="utf-8">
+        <title>Marks</title>
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/main.js" charset="utf-8" defer></script>
+    </head>
+    <body>
+        <div class="inputContainer">
+            <div class="formTitle">
+                Нанасяне на оценки
+            </div>
+            <div class="formContainer">
+                <form class="marksForm" id="enterMarkForm" method="post" autocomplete="on">
+                    <input type="text" placeholder="Име" name="name" maxlength="200" required>
+                    <input type="number" placeholder="Факултетен номер" name="number" min="62000" max="62999" required>
+                    <input type="number" placeholder="Оценка" name="mark" step="0.01" min="2" max="6" required>
+                    <input class="submitMark" type="submit" value="Въведи">
+                </form>
+            </div>
+        </div>
+        <div class="resultsContainer">
+            <table id="marksTable">
+                <thead>
+                <tr>
+                    <th>Име</th>
+                    <th>Факултетен номер</th>
+                    <th>Оценка</th>
+                </tr>
+            </thead>
+            </table>
+        </div>
+    </body>
+</html>
